@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>EcoMotto Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Designer" content="PremiumPixels.com" />
+<meta name="Author" content="$hekh@r d-Ziner, CSSJUNTION.com" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="/api/css/style.css"></link>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text.css'></link>
+
+</head>
+<body>
+	<div class="main">
+		<div class="header" >
+			<h1>Login or Create a Free Account!</h1>
+		</div>
+			<form th:action="@{/register}" method="post">
+				<ul class="left-form">
+					<h2>New Account:</h2>
+					<li>
+						<input name="username" type="text"   placeholder="Username"></input>
+						<a href="#" class="icon ticker"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input name="email" type="text"   placeholder="Email"></input>
+						<a href="#" class="icon ticker"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input name="password" type="password"   placeholder="password"></input>
+						<a href="#" class="icon into"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<li>
+						<input name="reg_password_repeat" type="password"   placeholder="password"></input>
+						<a href="#" class="icon into"> </a>
+						<div class="clear"> </div>
+					</li> 
+					<label class="checkbox"><input type="checkbox" name="checkbox" checked=""></input><i> </i>Please inform me of upcoming EcoMotto Events, Promotions and news</label>
+					<input type="submit" value="Create Account"></input>
+						<div class="clear"> </div>
+				</ul>
+			</form>
+			<form th:action="@{/home}" method="post">
+				<ul class="right-form">
+					<h3>Login:</h3>
+					<div>
+						<li>
+						<input name="userId" type="text"  placeholder="Username"></input>
+						</li>
+						<li> 
+						<input name="password" type="password"  placeholder="Password"></input>
+						</li>
+						<h4>I forgot my Password!</h4>
+							<input type="submit" value="Login" ></input>
+					</div>
+					<div class="clear"></div>
+				</ul>
+				<div class="clear"> </div>
+					
+			</form>
+			
+		</div>
+   					<div class="copy-right">
+						<p>&copy; Copyright 2014 By EcoMotto. All right reserved.</p> 
+					</div>
+</body>
+</html>
